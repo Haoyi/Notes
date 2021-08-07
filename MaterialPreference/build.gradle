@@ -17,6 +17,6 @@ android {
 }
 
 dependencies {
-  api 'com.android.support:appcompat-v7:22.2.0'
+  api 'androidx.appcompat:appcompat:1.0.0'
   api 'com.balysv:material-ripple:1.0.2'
 }

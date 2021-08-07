@@ -3,9 +3,9 @@ package com.lguipeng.notes.ui;
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.WindowManager;
@@ -48,11 +48,11 @@ public abstract class BaseActivity extends AppCompatActivity {
         ThemeUtils.changTheme(this, theme);
     }
 
-    protected int getColor(int res){
-        if (res <= 0)
-            throw new IllegalArgumentException("resource id can not be less 0");
-        return getResources().getColor(res);
-    }
+//    protected int getColor(int res){
+//        if (res <= 0)
+//            throw new IllegalArgumentException("resource id can not be less 0");
+//        return getResources().getColor(res);
+//    }
 
     @TargetApi(19)
     private void initWindow(){
@@ -70,11 +70,11 @@ public abstract class BaseActivity extends AppCompatActivity {
             return;
         toolbar.setBackgroundColor(getColorPrimary());
         toolbar.setTitle(R.string.app_name);
-        toolbar.setTitleTextColor(getColor(R.color.action_bar_title_color));
+        toolbar.setTitleTextColor(getResources().getColor(R.color.action_bar_title_color));
         toolbar.collapseActionView();
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null){
-            getSupportActionBar().setHomeAsUpIndicator(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
+            getSupportActionBar().setHomeAsUpIndicator(R.drawable.abc_ic_ab_back_material);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
     }

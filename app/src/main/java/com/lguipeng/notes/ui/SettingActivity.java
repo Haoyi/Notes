@@ -1,7 +1,7 @@
 package com.lguipeng.notes.ui;
 
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 
 import com.lguipeng.notes.R;
 import com.lguipeng.notes.module.DataModule;

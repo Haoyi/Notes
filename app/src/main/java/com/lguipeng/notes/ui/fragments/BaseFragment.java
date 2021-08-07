@@ -2,7 +2,7 @@ package com.lguipeng.notes.ui.fragments;
 
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 
 import com.lguipeng.notes.App;
 import com.lguipeng.notes.R;
