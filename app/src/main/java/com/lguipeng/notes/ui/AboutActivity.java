@@ -36,20 +36,20 @@ import com.tencent.mm.sdk.openapi.WXAPIFactory;
 import java.util.Arrays;
 import java.util.List;
 
-import butterknife.InjectView;
+import butterknife.BindView;
 import butterknife.OnClick;
 
 /**
  * Created by lgp on 2015/5/25.
  */
 public class AboutActivity extends BaseActivity implements View.OnClickListener{
-    @InjectView(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
-    @InjectView(R.id.version_text)
+    @BindView(R.id.version_text)
     TextView versionTextView;
-    @InjectView(R.id.blog_btn)
+    @BindView(R.id.blog_btn)
     Button blogButton;
-    @InjectView(R.id.project_home_btn)
+    @BindView(R.id.project_home_btn)
     Button projectHomeButton;
     private int clickCount = 0;
     private long lastClickTime = 0;

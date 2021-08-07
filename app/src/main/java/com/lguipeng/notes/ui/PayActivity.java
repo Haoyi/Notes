@@ -9,13 +9,13 @@ import com.lguipeng.notes.module.DataModule;
 import java.util.Arrays;
 import java.util.List;
 
-import butterknife.InjectView;
+import butterknife.BindView;
 
 /**
  * Created by lgp on 2015/6/1.
  */
 public class PayActivity extends BaseActivity{
-    @InjectView(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

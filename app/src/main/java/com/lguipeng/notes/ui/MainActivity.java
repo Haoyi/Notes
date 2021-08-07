@@ -58,7 +58,7 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import butterknife.InjectView;
+import butterknife.BindView;
 import butterknife.OnClick;
 import cn.bmob.v3.BmobQuery;
 import de.greenrobot.event.EventBus;
@@ -68,31 +68,31 @@ import de.greenrobot.event.EventBus;
  */
 public class MainActivity extends BaseActivity implements SwipeRefreshLayout.OnRefreshListener{
 
-    @InjectView(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
 
-    @InjectView(R.id.refresher)
+    @BindView(R.id.refresher)
     SwipeRefreshLayout refreshLayout;
 
-    @InjectView(R.id.recyclerView)
+    @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
 
-    @InjectView(R.id.drawer_layout)
+    @BindView(R.id.drawer_layout)
     DrawerLayout mDrawerLayout;
 
-    @InjectView(R.id.edit_note_type)
+    @BindView(R.id.edit_note_type)
     Button editNoteTypeButton;
 
-    @InjectView(R.id.left_drawer_listview)
+    @BindView(R.id.left_drawer_listview)
     ListView mDrawerMenuListView;
 
-    @InjectView(R.id.left_drawer)
+    @BindView(R.id.left_drawer)
     View drawerRootView;
 
-    @InjectView(R.id.fab)
+    @BindView(R.id.fab)
     FloatingActionButton fab;
 
-    @InjectView(R.id.progress_wheel)
+    @BindView(R.id.progress_wheel)
     ProgressWheel progressWheel;
 
     @Inject

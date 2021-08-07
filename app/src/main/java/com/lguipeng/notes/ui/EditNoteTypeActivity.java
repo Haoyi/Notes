@@ -23,17 +23,17 @@ import com.rengwuxian.materialedittext.MaterialEditText;
 import java.util.Arrays;
 import java.util.List;
 
-import butterknife.InjectView;
+import butterknife.BindView;
 import de.greenrobot.event.EventBus;
 
 /**
  * Created by lgp on 2015/6/2.
  */
 public class EditNoteTypeActivity extends BaseActivity{
-    @InjectView(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
 
-    @InjectView(R.id.edit_root_view)
+    @BindView(R.id.edit_root_view)
     LinearLayout editRootView;
 
     private MaterialEditText[] editTexts = new MaterialEditText[NoteType.ALL_COUNT - 1];

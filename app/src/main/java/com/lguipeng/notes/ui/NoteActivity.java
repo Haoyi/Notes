@@ -32,23 +32,23 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import butterknife.InjectView;
+import butterknife.BindView;
 import de.greenrobot.event.EventBus;
 
 /**
  * Created by lgp on 2015/5/25.
  */
 public class NoteActivity extends BaseActivity{
-    @InjectView(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
 
-    @InjectView(R.id.label_edit_text)
+    @BindView(R.id.label_edit_text)
     MaterialEditText labelEditText;
 
-    @InjectView(R.id.content_edit_text)
+    @BindView(R.id.content_edit_text)
     MaterialEditText contentEditText;
 
-    @InjectView(R.id.opr_time_line_text)
+    @BindView(R.id.opr_time_line_text)
     TextView oprTimeLineTextView;
 
     @Inject

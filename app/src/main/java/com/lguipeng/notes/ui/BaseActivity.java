@@ -39,7 +39,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         activityGraph = ((App) getApplication()).createScopedGraph(getModules().toArray());
         activityGraph.inject(this);
         setContentView(getLayoutView());
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
         initToolbar();
     }
 

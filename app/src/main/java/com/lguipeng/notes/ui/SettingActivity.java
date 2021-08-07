@@ -10,13 +10,13 @@ import com.lguipeng.notes.ui.fragments.SettingFragment;
 import java.util.Arrays;
 import java.util.List;
 
-import butterknife.InjectView;
+import butterknife.BindView;
 
 /**
  * Created by lgp on 2015/5/24.
  */
 public class SettingActivity extends BaseActivity{
-    @InjectView(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
 
     @Override
