@@ -48,8 +48,9 @@ public class PreferenceCategory extends android.preference.PreferenceCategory {
 
   @Override
   protected View onCreateView(ViewGroup parent) {
+    super.onCreateView(parent);
     LayoutInflater layoutInflater =
-        (LayoutInflater) getContext().getSystemService(LAYOUT_INFLATER_SERVICE);
+            (LayoutInflater) getContext().getSystemService(LAYOUT_INFLATER_SERVICE);
     return layoutInflater.inflate(R.layout.mp_preference_category, parent, false);
   }
 

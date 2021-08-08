@@ -1,11 +1,10 @@
 package com.jenzz.materialpreference;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.ImageView;
 
-import static android.os.Build.VERSION_CODES.LOLLIPOP;
+import androidx.appcompat.widget.AppCompatImageView;
+
 import static android.view.View.MeasureSpec.AT_MOST;
 import static android.view.View.MeasureSpec.UNSPECIFIED;
 import static android.view.View.MeasureSpec.getMode;
@@ -16,7 +15,7 @@ import static java.lang.Integer.MAX_VALUE;
 /**
  * Extension of ImageView that correctly applies maxWidth and maxHeight.
  */
-public class PreferenceImageView extends ImageView {
+public class PreferenceImageView extends AppCompatImageView {
 
   private int maxWidth = MAX_VALUE;
   private int maxHeight = MAX_VALUE;
@@ -33,11 +32,6 @@ public class PreferenceImageView extends ImageView {
     super(context, attrs, defStyleAttr);
   }
 
-  @TargetApi(LOLLIPOP)
-  public PreferenceImageView(Context context, AttributeSet attrs, int defStyleAttr,
-      int defStyleRes) {
-    super(context, attrs, defStyleAttr, defStyleRes);
-  }
 
   @Override
   public void setMaxWidth(int maxWidth) {
